@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Auto - Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">Prime<span>Auto</span></a>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="services.html">Услуги</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container catalog">
+
+        <aside class="sidebar">
+            <h3>Фильтры</h3>
+            <div class="filter-group">
+                <label>Марка</label>
+                <select>
+                    <option>Все марки</option>
+                    <option>BMW</option>
+                    <option>Audi</option>
+                    <option>Mercedes</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Цена до (₽)</label>
+                <input type="number" placeholder="10 000 000">
+            </div>
+            <div class="filter-group">
+                <label>Год от</label>
+                <input type="number" placeholder="1990">
+            </div>
+            <div class="filter-group">
+                <label>Год до</label>
+                <input type="number" placeholder="2026">
+            </div>
+            <button class="btn-apply">Применить</button>
+        </aside>
+
+        <section class="catalog-list">
+            <h2>Все автомобили в наличии</h2>
+            <div class="cars-grid">
+
+                <article class="car-card">
+                    <div class="car-image">
+                        <div class="img-placeholder">Фото авто</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW X5 xDrive30d, 2022</h3>
+                        <p class="price">7 200 000 ₽</p>
+                        <ul class="infos">
+                            <li>3.0 л</li>
+                            <li>Дизель</li>
+                            <li>35 000 км</li>
+                        </ul>
+                        <a href="product.html" class="btn-detail">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <div class="car-image">
+                        <div class="img-placeholder">Фото авто</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Audi A6 Quattro, 2020</h3>
+                        <p class="price">4 200 000 ₽</p>
+                        <ul class="infos">
+                            <li>2.0 л</li>
+                            <li>Бензин</li>
+                            <li>60 000 км</li>
+                        </ul>
+                        <a href="product.html" class="btn-detail">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <div class="car-image">
+                        <div class="img-placeholder">Фото авто</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW 320i M Sport, 2021</h3>
+                        <p class="price">4 500 000 ₽</p>
+                        <ul class="infos">
+                            <li>2.0 л</li>
+                            <li>Бензин</li>
+                            <li>48 000 км</li>
+                        </ul>
+                        <a href="product.html" class="btn-detail">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <div class="car-image">
+                        <div class="img-placeholder">Фото авто</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Audi Q8 S-Line, 2023</h3>
+                        <p class="price">9 100 000 ₽</p>
+                        <ul class="infos">
+                            <li>3.0 л</li>
+                            <li>Бензин</li>
+                            <li>15 000 км</li>
+                        </ul>
+                        <a href="product.html" class="btn-detail">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <div class="car-image">
+                        <div class="img-placeholder">Фото авто</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes GLE 400d, 2022</h3>
+                        <p class="price">8 500 000 ₽</p>
+                        <ul class="infos">
+                            <li>3.0 л</li>
+                            <li>Дизель</li>
+                            <li>28 000 км</li>
+                        </ul>
+                        <a href="product.html" class="btn-detail">Подробнее</a>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <div class="car-image">
+                        <div class="img-placeholder">Фото авто</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes E200 AMG Line, 2021</h3>
+                        <p class="price">5 300 000 ₽</p>
+                        <ul class="infos">
+                            <li>2.0 л</li>
+                            <li>Бензин</li>
+                            <li>41 500 км</li>
+                        </ul>
+                        <a href="product.html" class="btn-detail">Подробнее</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h4>Prime Auto</h4>
+                <p>Ваш надежный партнер в мире автомобилей.</p>
+            </div>
+            <div>
+                <h4>Меню</h4>
+                <a href="catalog.html">Каталог</a><br>
+                <a href="services.html">Услуги</a><br>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>+7 (914) 141-12-66</p>
+                <p>г. Иркутск, ул. Дыбовского, 10</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Prime Auto. Все права защищены.
+        </div>
+    </footer>
+
+</body>
+
+</html>
