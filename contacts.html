@@ -23,32 +23,50 @@
         </div>
     </header>
 
-    <main class="container">
-        <section class="contact-info">
-            <h1>Наши контакты</h1>
-            <p>Свяжитесь с нами любым удобным способом или оставьте заявку.</p>
+    <main class="container contacts-page">
+        <section class="contacts-header">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами удобным способом или оставьте заявку на подбор автомобиля</p>
+        </section>
 
-            <div class="info-block">
-                <h3>Адрес</h3>
-                <p>г. Иркутск, ул. Дыбовского, 10</p>
-
-                <h3>Телефон</h3>
-                <p>+7 (914) 141-12-66</p>
-
-                <h3>Режим работы</h3>
-                <p>Ежедневно с 09:00 до 21:00</p>
+        <div class="contacts-grid">
+            <div class="contacts-info">
+                <div class="info-item">
+                    <h3> Адрес</h3>
+                    <p>г. Иркутск, ул. Дыбовского, 10</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Телефон</h3>
+                    <p>+7 (914) 884-78-77</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>🕒 Режим работы</h3>
+                    <p>Ежедневно с 09:00 до 21:00</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>primeauto@mail.ru</a></p>
+                </div>
             </div>
-        </section>
-
-        <section class="contact-form-section">
-            <h2>Оставить заявку</h2>
-            <form class="form-box">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Ваш телефон" required>
-                <textarea rows="5" placeholder="Сообщение или вопрос"></textarea>
-                <button type="submit">Отправить</button>
-            </form>
-        </section>
+            <div class="contacts-form-wrapper">
+                <h2>Оставить заявку</h2>
+                <form class="form-box" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" rows="4" placeholder="Какой автомобиль вас интересует?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -59,13 +77,13 @@
             </div>
             <div>
                 <h4>Меню</h4>
-                <a href="catalog.html">Каталог</a><br>
-                <a href="services.html">Услуги</a><br>
+                <a href="catalog.html">Каталог</a>
+                <a href="services.html">Услуги</a>
                 <a href="contacts.html">Контакты</a>
             </div>
             <div>
                 <h4>Контакты</h4>
-                <p>+7 (914) 141-12-66</p>
+                <p>+7 (914) 884-78-77</p>
                 <p>г. Иркутск, ул. Дыбовского, 10</p>
             </div>
         </div>
