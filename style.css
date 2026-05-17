@@ -374,6 +374,7 @@ h2 {
     padding: 30px;
     border-radius: 8px;
     border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .adv-card h3 {
@@ -387,6 +388,243 @@ h2 {
     color: #666;
     line-height: 1.6;
     font-size: 15px;
+}
+
+.car-gallery {
+    margin-bottom: 40px;
+}
+
+.main-photo {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.main-photo img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+
+.photo-list img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+
+}
+
+.photo-list img:hover {
+    border-color: rgb(0, 81, 255);
+}
+
+.product-details {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.product-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(0, 81, 255);
+    margin-bottom: 30px;
+}
+
+.product-specs h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.specs-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.specs-table td {
+    padding: 15px 10px;
+    font-size: 15px;
+
+}
+
+.seller-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.seller-actions button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-call,
+.btn-write {
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+
+.btn-call:hover,
+.btn-write:hover {
+    background-color: rgba(0, 81, 255, 0.9);
+}
+
+.product-description {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.product-description h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.product-description p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.services-intro h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services-intro p {
+    color: #666;
+    font-size: 16px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: black;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.catalog-page {
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.sidebar {
+    margin-top: 60px;
+    width: 260px;
+    flex-shrink: 0;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.catalog-list {
+    flex-grow: 1;
+}
+
+.catalog-list h2 {
+    margin-bottom: 25px;
+}
+
+.btn-apply {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: rgba(0, 81, 255, 0.9);
 }
 
 @media (max-width: 767px) {
@@ -439,5 +677,42 @@ h2 {
 
     .adv-card {
         padding: 25px;
+    }
+
+    .main-photo img {
+        height: 300px;
+    }
+
+    .photo-list img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .product-details h1,
+    .product-price {
+        font-size: 26px;
+    }
+
+    .product-details,
+    .product-description {
+        padding: 20px;
+    }
+
+    .seller-actions {
+        flex-direction: column;
+    }
+
+    .specs-table td {
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+
+    .catalog-page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-top: 0;
+        width: 100%;
     }
 }
